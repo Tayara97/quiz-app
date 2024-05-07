@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma Arial;
+}
+.quiz-app {
+  width: 800px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  margin: 20px auto;
+}
+.quiz-app .quiz-info {
+  display: flex;
+  padding: 10px;
+  background-color: #0075ff;
+  color: white;
+  text-transform: capitalize;
+}
+.quiz-app .quiz-info .category {
+  flex: 1;
+}
+.quiz-app .quiz-info .count {
+  flex: 1;
+  text-align: right;
+}
+.quiz-app .question-area {
+  padding: 15px;
+  background-color: #fff;
+  margin: 10px 0 0;
+}
+.quiz-app .question-area h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+.quiz-app .answers-area .answer {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+}
+.quiz-app .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+.quiz-app .answers-area .answer input[type="radio"]:checked + label {
+  color: #0075ff;
+}
+.quiz-app .answers-area .answer label {
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  font-size: 14px;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.quiz-app .submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #0075ff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.quiz-app .submit:focus {
+  outline: none;
+}
+.bullets {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-top: 1px solid #dfdfdf;
+}
+.bullets .spans {
+  flex: 1;
+  display: flex;
+}
+
+.bullets .spans span {
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.bullets .spans span.on {
+  background-color: #0075ff;
+}
+
+.quiz-app .result span.perfect {
+  color: #0075ff;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.quiz-app .result span.good {
+  color: green;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.quiz-app .result span.pass {
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+}
